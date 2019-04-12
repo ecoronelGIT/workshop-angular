@@ -1,0 +1,6 @@
+<div [routerLink]="['/tasks', task.id]" class="well hoverwell thumbnail" [ngClass]="getStartTimeClass(task)">
+  <h2>{{task.name | uppercase}}</h2>
+  <div>Description: {{task.description}}</div>
+  <div>State: {{task.state}}</div>
+  <div>Value: {{task.value}}</div>
+</div>
