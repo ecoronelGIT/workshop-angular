@@ -1,64 +1,17 @@
 {
-  "name": "sowecom-web",
+  "name": "frontend",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --progress --port 8080",
-    "test": "karma start",
-    "build-dev": "rimraf dist && webpack --config config/webpack.dev.js --progress --profile --bail",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "ecoronel@gmail.com",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/angular/angular.io/blob/master/LICENSE"
-    }
-  ],
-  "dependencies": {
-    "@angular/animations": "~4.2.0",
-    "@angular/common": "~4.2.0",
-    "@angular/compiler": "~4.2.0",
-    "@angular/core": "~4.2.0",
-    "@angular/forms": "~4.2.0",
-    "@angular/http": "~4.2.0",
-    "@angular/platform-browser": "~4.2.0",
-    "@angular/platform-browser-dynamic": "~4.2.0",
-    "@angular/router": "~4.2.0",
-    "angular2-toaster": "^4.0.1",
-    "bootstrap": "^3.3.7",
-    "core-js": "^2.4.1",
-    "expose-loader": "^0.7.3",
-    "jquery": "^3.2.1",
-    "rxjs": "5.4.2",
-    "to-string-loader": "1.1.4",
-    "zone.js": "^0.8.4"
-  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@types/node": "^6.0.45",
-    "@types/jasmine": "2.5.36",
-    "angular2-template-loader": "^0.6.0",
-    "awesome-typescript-loader": "^3.0.4",
-    "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "2.0.0-beta.5",
-    "file-loader": "^0.9.0",
-    "html-loader": "^0.4.3",
-    "html-webpack-plugin": "^2.16.1",
-    "jasmine-core": "^2.4.1",
-    "karma": "^1.2.0",
-    "karma-chrome-launcher": "^2.0.0",
-    "karma-jasmine": "^1.0.2",
-    "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "^2.0.1",
-    "null-loader": "^0.1.1",
-    "raw-loader": "^0.5.1",
-    "rimraf": "^2.5.2",
-    "style-loader": "^0.13.1",
-    "typescript": "^2.5.0",
-    "webpack": "2.2.1",
-    "webpack-dev-server": "2.4.1",
-    "webpack-merge": "^3.0.0",
-    "tslint": "^5.7.0"
-  },
-  "repository": {}
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
 }
