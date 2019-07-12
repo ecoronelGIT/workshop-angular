@@ -1,0 +1,7 @@
+.well div {color: #bbb;}
+.thumbnail {min-height: 210px; margin-bottom: 20px;}
+.hold{background-color: #485563;}
+.failed{background-color: #BE4C4C;}
+.running{background-color: #327346;}
+.completed{background-color: #4B51A8;}
+.waiting{background-color: #AFA54C;}

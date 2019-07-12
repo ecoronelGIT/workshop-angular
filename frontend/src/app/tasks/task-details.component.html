@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-11">
+      <h2>{{task?.name | uppercase}} </h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div><strong>Value:</strong> {{task?.value}}</div>
+      <div><strong>State:</strong> {{task?.state}}</div>
+    </div>
+  </div>
+
+  <div *ngIf="task.state == 'COMPLETED'">
+    <div class="result">RESULT</div>
+    <div *ngIf="task.divided"><strong>This Number is prime</strong></div>
+    <div *ngIf="!task.divided"><strong>This Number is not prime</strong></div>
+  </div>
+  <hr>
+  <div >
+    <button *ngIf="task.state == 'HOLD'" type="submit" (click)="run()" class="btn btn-primary">Run</button>
+    <button *ngIf="task.state == 'COMPLETED' || task.state == 'FAILED'"
+            type="submit" (click)="delete()" class="btn btn-primary">Delete</button>
+    <button type="button" (click)="cancel()" class="btn btn-default">Back</button>
+  </div>
+
+</div>
