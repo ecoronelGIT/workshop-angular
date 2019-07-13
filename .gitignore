@@ -1,6 +1,11 @@
 */dist/*
 */node_modules/*
 */target/*
+*/node/*
+*/logs/*
 logs/*
 .idea/*
 *.iml
+*.ipr
+*.iws
+*.DS_Store

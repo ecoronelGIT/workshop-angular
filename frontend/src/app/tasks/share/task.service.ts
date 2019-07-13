@@ -45,7 +45,7 @@ export class TaskService {
   runAll() {
     let headers = new HttpHeaders({'Content-Type': 'application/json'});
     this.http.post('http://localhost:8090/v1/tasks/run/', {}, {headers: headers})
-        .pipe(catchError(this.handleError));
+        .pipe(catchError(this.handleError)).subscribe();
   }
 
   delete(id: number): Observable<any> {

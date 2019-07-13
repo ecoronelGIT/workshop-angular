@@ -73,7 +73,7 @@
                 <outputDirectory>${basedir}/target/classes/static</outputDirectory>
                 <resources>
                   <resource>
-                    <directory>D:/desa/despegar/app/frontend/target/classes/static</directory>
+                    <directory>${project.basedir}/frontend/target/classes/static</directory>
                     <filtering>true</filtering>
                   </resource>
                 </resources>

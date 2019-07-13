@@ -1,5 +1,5 @@
-import {ISession, ITask} from '../share/task.model';
-import {Observable} from 'rxjs/Rx';
+import {ITask} from '../share/task.model';
+import {Observable, of} from 'rxjs';
 import {TaskService} from "./task.service";
 
 describe('TaskService', () => {
@@ -14,7 +14,7 @@ describe('TaskService', () => {
   describe('deleteTask', () => {
     it('should remove the task from the list of tasks', () => {
       const tasks: ITask[] = [{id: '1', name: 'Task 1', value: 3},{id: '2', name: 'Task 2', value: 9}];
-      mockHttp.delete.and.returnValue(Observable.of(false));
+      mockHttp.delete.and.returnValue(of(false));
 
       taskService.delete(1);
 
@@ -24,7 +24,7 @@ describe('TaskService', () => {
 
     it('should call http.delete with the right URL', () => {
       const tasks: ITask[] = [{id: '1', name: 'Task 1', value: 3},{id: '2', name: 'Task 2', value: 9}];
-      mockHttp.delete.and.returnValue(Observable.of(false));
+      mockHttp.delete.and.returnValue(of(false));
 
       taskService.delete(1);
 
@@ -36,7 +36,7 @@ describe('TaskService', () => {
   describe('addTask', () => {
     it('should call http.post with the right URL', () => {
       const tasks: ITask = {name: 'Task 1', value: 3};
-      mockHttp.post.and.returnValue(Observable.of(false));
+      mockHttp.post.and.returnValue(of(false));
 
       taskService.saveTask(task);
 
